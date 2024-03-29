@@ -12,6 +12,11 @@ public class Practice01 {
         Function<String, String> finalFT = count.andThen(countX2);
 
         System.out.println(finalFT.apply("Sumanta..."));
+        String rs = xyz("Sumanta", str -> "Name " + str + " contains " + str.length() + " character(s)");
+        System.out.println(rs);
+    }
 
+    public static String xyz(String name, Function<String, String> fn) {
+        return fn.apply(name);
     }
 }

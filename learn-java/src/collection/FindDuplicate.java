@@ -18,7 +18,7 @@ public class FindDuplicate {
 
         //2nd way
         Map<String, Long> nameWithCount = names.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        List<String> duplicateNames2 = nameWithCount.entrySet().stream().filter(entry -> entry.getValue() > 1).map(entry -> entry.getKey()).collect(Collectors.toList())
+        List<String> duplicateNames2 = nameWithCount.entrySet().stream().filter(entry -> entry.getValue() > 1).map(entry -> entry.getKey()).collect(Collectors.toList());
         System.out.println(nameWithCount);
         System.out.println(duplicateNames2);
 

@@ -1,0 +1,12 @@
+# Ignore all .class files
+**/*.class
+
+# Ignore all out folders
+**/out/
+
+# Ignore IntelliJ IDEA meta files
+**/.idea/
+**/*.iml
+**/*.iws
+**/*.ipr
+**/.idea_modules/
